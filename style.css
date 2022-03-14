@@ -1,0 +1,126 @@
+/* Customing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #5323A5;
+    --primary-hover: #471d8f;
+    --secondary: #010001;
+    --gray: #B1B3BE;
+}
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* Styling Card */
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.25em 1.75em 2em 1.75em;
+    box-shadow: 0px 20px 35px 3px rgba(147, 147, 147, 0.15);
+    border-radius: 1.25em;
+}
+
+.profile__image {
+    width: 120px;
+    height: 120px;
+    background-color: var(--primary);
+    overflow: hidden;
+    border-radius: 100%;
+    padding: 1.25em 0 0 0.15em;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    margin-top: 1.25em;
+}
+
+table tr th,
+table tr td {
+    font-size: 0.85em;
+    text-align: left;
+}
+
+table tr th {
+    padding-right: 0.5em;
+    font-weight: 700;
+}
+
+table tr td {
+    padding-left: 0.5em;
+}
+
+.profile__socmed {
+    margin-top: 1em;
+}
+
+.profile__socmed ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profile__socmed li {
+    list-style: none;
+    margin-right: 0.75em;
+}
+
+.profile__socmed a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.5em;
+    transition: color .3s ease-out;
+}
+
+.profile__socmed a:hover {
+    color: var(--primary);
+}
+
+.profile__button {
+    margin-top: 2.5em;
+}
+
+.profile__button a {
+    padding: 1em 6.25em;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.75em;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    animation: bounce 1s infinite alternate;
+    display: inline-block;
+}
+
+.profile__button a:hover {
+    background-color: var(--primary-hover);
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
